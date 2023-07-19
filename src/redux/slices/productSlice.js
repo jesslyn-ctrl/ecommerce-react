@@ -4,21 +4,36 @@ import { productService } from "./../../services";
 export const getRecommendedProducts = createAsyncThunk(
   "products/getRecommended",
   async () => {
-    const { data: response } = await productService.getRecommendedProducts();
-    return response;
+    const response = await productService.getRecommendedProducts();
+    if (response.statusCode >= 400) {
+      const errorMessage =
+        response.error || "An error occurred during fetching 8 products data.";
+      throw new Error(errorMessage);
+    }
+    return response.data;
   }
 );
 
 export const getAllProducts = createAsyncThunk("products/getAll", async () => {
-  const { data: response } = await productService.getAllProducts();
-  return response;
+  const response = await productService.getAllProducts();
+  if (response.statusCode >= 400) {
+    const errorMessage =
+      response.error || "An error occurred during fetching all products.";
+    throw new Error(errorMessage);
+  }
+  return response.data;
 });
 
 export const getProductDetail = createAsyncThunk(
   "products/getDetail",
   async (productId) => {
-    const { data: response } = await productService.getProductDetail(productId);
-    return response;
+    const response = await productService.getProductDetail(productId);
+    if (response.statusCode >= 400) {
+      const errorMessage =
+        response.error || "An error occurred during fetching product detail.";
+      throw new Error(errorMessage);
+    }
+    return response.data;
   }
 );
 

@@ -4,8 +4,13 @@ import { categoryService } from "./../../services";
 export const getCategoriesData = createAsyncThunk(
   "categories/get",
   async () => {
-    const { data: response } = await categoryService.getCategories();
-    return response;
+    const response = await categoryService.getCategories();
+    if (response.statusCode >= 400) {
+      const errorMessage =
+        response.error || "An error occurred during fetch category data.";
+      throw new Error(errorMessage);
+    }
+    return response.data;
   }
 );
 
