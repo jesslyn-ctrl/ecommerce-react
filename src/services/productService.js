@@ -1,7 +1,7 @@
 import axios from "../hooks/useAxios";
 
 const getRecommendedProducts = async () => {
-  const response = await axios("GET", "/products?limit=8");
+  const response = await axios("GET", "/products?limit=16");
   return response;
 };
 

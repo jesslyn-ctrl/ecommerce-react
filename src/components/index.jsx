@@ -14,4 +14,5 @@ export { default as RegisterForm } from "./forms/RegisterForm";
 export { default as ErrorPopup } from "./errors/ErrorPopup";
 export { default as BreadCrumbs } from "./others/BreadCrumbs";
 export { default as RatingStars } from "./others/RatingStars";
+export { default as ScrollTopButton } from "./others/ScrollToTopButton";
 export { default as NotFound } from "./others/NotFound";

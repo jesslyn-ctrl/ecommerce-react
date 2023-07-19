@@ -10,12 +10,24 @@ const RegisterForm = () => {
       </div>
 
       <form className="mt-8 flex flex-col">
-        <label htmlFor="name">Full Name</label>
-        <input
-          className="mb-3 mt-3 border px-4 py-2"
-          type="text"
-          placeholder="Your Full Name"
-        />
+        <div className="flex flex-wrap mb-3">
+          <div className="flex flex-col w-1/2 pr-2">
+            <label htmlFor="first-name">First Name</label>
+            <input
+              className="mt-1 border px-4 py-2"
+              type="text"
+              placeholder="Your First Name"
+            />
+          </div>
+          <div className="flex flex-col w-1/2 pl-2">
+            <label htmlFor="last-name">Last Name</label>
+            <input
+              className="mt-1 border px-4 py-2"
+              type="text"
+              placeholder="Your Last Name"
+            />
+          </div>
+        </div>
 
         <label className="mt-3" htmlFor="username">
           Username

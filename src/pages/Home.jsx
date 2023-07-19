@@ -3,6 +3,7 @@ import {
   CampaignBanner,
   CategoryList,
   ProductList,
+  ScrollTopButton,
 } from "../components";
 
 const Home = () => {
@@ -39,6 +40,7 @@ const Home = () => {
         </h2>
       </section>
       <ProductList productType="recommended" />
+      <ScrollTopButton />
     </div>
   );
 };
