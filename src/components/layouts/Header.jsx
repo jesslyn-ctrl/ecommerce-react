@@ -161,7 +161,6 @@ const Header = () => {
             <div className="ml-auto flex gap-4 px-5">
               <NavLink to="/">
                 <button
-                  to="/login"
                   onClick={handleLogout}
                   className="items-center justify-center rounded font-medium text-center text-blue-500 bg-white border-white lg:border border-2 px-4 py-1 text-base transition duration-200 ease-in-out hover:bg-slate-100"
                 >
@@ -172,18 +171,12 @@ const Header = () => {
           ) : (
             <div className="ml-auto flex gap-4 px-5">
               <NavLink to="/login">
-                <button
-                  to="/login"
-                  className="items-center justify-center rounded font-medium text-center text-blue-500 bg-white border-white lg:border border-2 px-4 py-1 text-base transition duration-200 ease-in-out hover:bg-slate-100"
-                >
+                <button className="items-center justify-center rounded font-medium text-center text-blue-500 bg-white border-white lg:border border-2 px-4 py-1 text-base transition duration-200 ease-in-out hover:bg-slate-100">
                   Login
                 </button>
               </NavLink>
               <NavLink to="/register">
-                <button
-                  to="/register"
-                  className="items-center justify-center rounded font-medium text-center text-blue-500 bg-white border-white lg:border border-2 px-4 py-1 text-base transition duration-200 ease-in-out hover:bg-slate-100"
-                >
+                <button className="items-center justify-center rounded font-medium text-center text-blue-500 bg-white border-white lg:border border-2 px-4 py-1 text-base transition duration-200 ease-in-out hover:bg-slate-100">
                   Register
                 </button>
               </NavLink>

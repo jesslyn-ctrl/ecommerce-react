@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import githubIcon from "../../assets/images/github.svg";
 import linkedinIcon from "../../assets/images/linkedin.svg";
@@ -19,20 +20,20 @@ const Footer = () => {
               adipisicing elit.
             </p>
             <div className="mt-10 flex gap-3">
-              <a href="https://github.com/jesslyn-ctrl">
+              <Link to="https://github.com/jesslyn-ctrl">
                 <img
                   className="h-6 w-6 cursor-pointer"
                   src={githubIcon}
                   alt="github-icon"
                 />
-              </a>
-              <a href="https://www.linkedin.com/in/jesslyn-jesslyn-5798711a7/">
+              </Link>
+              <Link to="https://www.linkedin.com/in/jesslyn-jesslyn-5798711a7/">
                 <img
                   className="h-6 w-6 cursor-pointer"
                   src={linkedinIcon}
                   alt="linkedin-icon"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -41,13 +42,13 @@ const Footer = () => {
               <p className="font-medium text-gray-500">FEATURES</p>
               <ul className="text-sm text-blue-500 leading-8">
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Marketing</a>
+                  <Link to="">Marketing</Link>
                 </li>
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Commerce</a>
+                  <Link to="">Commerce</Link>
                 </li>
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Merchandise</a>
+                  <Link to="">Merchandise</Link>
                 </li>
               </ul>
             </div>
@@ -56,13 +57,13 @@ const Footer = () => {
               <p className="font-medium text-gray-500">SUPPORT</p>
               <ul className="text-sm text-blue-500 leading-8">
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Pricing</a>
+                  <Link to="">Pricing</Link>
                 </li>
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Docs</a>
+                  <Link to="">Docs</Link>
                 </li>
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Merchendise</a>
+                  <Link to="">Merchendise</Link>
                 </li>
               </ul>
             </div>
@@ -71,16 +72,16 @@ const Footer = () => {
               <p className="font-medium text-gray-500">DOCUMENTS</p>
               <ul className="text-sm text-blue-500 leading-8">
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Terms</a>
+                  <Link to="">Terms</Link>
                 </li>
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Conditions</a>
+                  <Link to="">Conditions</Link>
                 </li>
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Privacy</a>
+                  <Link to="">Privacy</Link>
                 </li>
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">License</a>
+                  <Link to="">License</Link>
                 </li>
               </ul>
             </div>
@@ -89,10 +90,10 @@ const Footer = () => {
               <p className="font-medium text-gray-500">DELIVERY</p>
               <ul className="text-sm text-blue-500 leading-8">
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Restrictions</a>
+                  <Link to="">Restrictions</Link>
                 </li>
                 <li className="hover:text-blue-400 hover:font-medium">
-                  <a href="#">Payments</a>
+                  <Link to="">Payments</Link>
                 </li>
               </ul>
             </div>
@@ -113,13 +114,13 @@ const Footer = () => {
                 <p className="font-medium text-gray-500">FEATURES</p>
                 <ul className="text-sm text-blue-500 leading-8">
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Marketing</a>
+                    <Link to="">Marketing</Link>
                   </li>
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Commerce</a>
+                    <Link to="">Commerce</Link>
                   </li>
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Merchandise</a>
+                    <Link to="">Merchandise</Link>
                   </li>
                 </ul>
               </div>
@@ -128,13 +129,13 @@ const Footer = () => {
                 <p className="font-medium text-gray-500">SUPPORT</p>
                 <ul className="text-sm text-blue-500 leading-8">
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Pricing</a>
+                    <Link to="">Pricing</Link>
                   </li>
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Docs</a>
+                    <Link to="">Docs</Link>
                   </li>
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Merchendise</a>
+                    <Link to="">Merchendise</Link>
                   </li>
                 </ul>
               </div>
@@ -143,16 +144,16 @@ const Footer = () => {
                 <p className="font-medium text-gray-500">DOCUMENTS</p>
                 <ul className="text-sm text-blue-500 leading-8">
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Terms</a>
+                    <Link to="">Terms</Link>
                   </li>
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Conditions</a>
+                    <Link to="">Conditions</Link>
                   </li>
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Privacy</a>
+                    <Link to="">Privacy</Link>
                   </li>
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">License</a>
+                    <Link to="">License</Link>
                   </li>
                 </ul>
               </div>
@@ -161,10 +162,10 @@ const Footer = () => {
                 <p className="font-medium text-gray-500">DELIVERY</p>
                 <ul className="text-sm text-blue-500 leading-8">
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Restrictions</a>
+                    <Link to="">Restrictions</Link>
                   </li>
                   <li className="hover:text-blue-400 hover:font-medium">
-                    <a href="#">Payments</a>
+                    <Link to="">Payments</Link>
                   </li>
                 </ul>
               </div>
