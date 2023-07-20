@@ -1,4 +1,4 @@
-<p align="center"><img align="center" width="280" src="./src/assets/images/logo.png"/></p>
+<p align="center"><img align="center" width="280" src="public/images/logo.png"/></p>
 <h3 align="center">Frankey Ecommerce (Vite + React Version)</h3>
 <hr>
 

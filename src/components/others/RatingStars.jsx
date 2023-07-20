@@ -1,7 +1,4 @@
 import PropTypes from "prop-types";
-import fullStar from "./../../assets/images/star.svg";
-import halfStar from "./../../assets/images/half-star.svg";
-import emptyStar from "./../../assets/images/empty-star.svg";
 
 const RatingStars = ({ rating }) => {
   const rate = rating.rate;
@@ -16,7 +13,7 @@ const RatingStars = ({ rating }) => {
       {Array.from({ length: filledStars }, (_, index) => (
         <img
           key={`full-star-${index}`}
-          src={fullStar}
+          src="/images/star.svg"
           alt="full-star"
           className="h-4 w-4"
         />
@@ -24,14 +21,14 @@ const RatingStars = ({ rating }) => {
 
       {/* Create the image element for the half star if applicable */}
       {hasHalfStar && (
-        <img src={halfStar} alt="half-star" className="h-4 w-4" />
+        <img src="/images/half-star.svg" alt="half-star" className="h-4 w-4" />
       )}
 
       {/* Create image elements for empty star */}
       {Array.from({ length: emptyStars }, (_, index) => (
         <img
           key={`empty-star-${index}`}
-          src={emptyStar}
+          src="/images/empty-star.svg"
           alt="empty-star"
           className="h-4 w-4"
         />

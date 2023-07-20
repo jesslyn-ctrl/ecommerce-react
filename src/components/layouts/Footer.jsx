@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png";
-import githubIcon from "../../assets/images/github.svg";
-import linkedinIcon from "../../assets/images/linkedin.svg";
 
 const Footer = () => {
   return (
@@ -12,7 +9,7 @@ const Footer = () => {
           <div className="ml-5">
             <img
               className="mt-10 mb-5 h-[100px] w-[150px]"
-              src={Logo}
+              src="/images/logo.png"
               alt="company-logo"
             />
             <p className="pl-0">
@@ -23,14 +20,14 @@ const Footer = () => {
               <Link to="https://github.com/jesslyn-ctrl">
                 <img
                   className="h-6 w-6 cursor-pointer"
-                  src={githubIcon}
+                  src="/images/github.svg"
                   alt="github-icon"
                 />
               </Link>
               <Link to="https://www.linkedin.com/in/jesslyn-jesslyn-5798711a7/">
                 <img
                   className="h-6 w-6 cursor-pointer"
-                  src={linkedinIcon}
+                  src="/images/linkedin.svg"
                   alt="linkedin-icon"
                 />
               </Link>
@@ -105,7 +102,7 @@ const Footer = () => {
           <div>
             <img
               className="mt-10 h-[130px] w-[180px]"
-              src={Logo}
+              src="/images/logo.png"
               alt="company-logo"
             />
 

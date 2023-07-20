@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { logout } from "./../../redux/slices/authSlice";
 import { authHelpers } from "./../../utils";
-import Logo from "./../../assets/images/logo.png";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -29,7 +28,7 @@ const Header = () => {
         <NavLink to="/">
           <img
             className="cursor-pointer h-[100px] w-[150px]"
-            src={Logo}
+            src="/images/logo.png"
             alt="brand"
           />
         </NavLink>
